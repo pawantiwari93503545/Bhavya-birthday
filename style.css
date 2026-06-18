@@ -1,0 +1,449 @@
+/* ==========================
+   GLOBAL STYLES
+========================== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    font-family:'Poppins',sans-serif;
+    background:#050505;
+    color:#ffffff;
+    overflow-x:hidden;
+    line-height:1.7;
+}
+
+/* ==========================
+   SCROLLBAR
+========================== */
+
+::-webkit-scrollbar{
+    width:8px;
+}
+
+::-webkit-scrollbar-track{
+    background:#111;
+}
+
+::-webkit-scrollbar-thumb{
+    background:gold;
+    border-radius:20px;
+}
+
+/* ==========================
+   HEADINGS
+========================== */
+
+h1,h2,h3{
+    font-family:'Cinzel',serif;
+}
+
+h2{
+    font-size:2.5rem;
+    text-align:center;
+    margin-bottom:40px;
+    color:gold;
+}
+
+/* ==========================
+   BUTTONS
+========================== */
+
+.btn,
+#musicBtn{
+    display:inline-block;
+    padding:14px 28px;
+    background:gold;
+    color:black;
+    text-decoration:none;
+    border:none;
+    border-radius:50px;
+    cursor:pointer;
+    font-weight:600;
+    transition:0.3s;
+}
+
+.btn:hover,
+#musicBtn:hover{
+    transform:translateY(-3px);
+    box-shadow:0 0 20px gold;
+}
+
+/* ==========================
+   HERO SECTION
+========================== */
+
+.hero{
+    min-height:100vh;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    padding:40px;
+    position:relative;
+}
+
+.hero h1{
+    font-size:4rem;
+    color:gold;
+    margin-top:20px;
+}
+
+.hero h2{
+    color:#ff3b3b;
+    margin:15px 0;
+}
+
+.nickname{
+    color:#ff6b6b;
+    font-size:1.2rem;
+    margin-bottom:20px;
+}
+
+.hero-text{
+    max-width:700px;
+    font-size:1.2rem;
+    margin-bottom:35px;
+}
+
+/* ==========================
+   COUNTDOWN
+========================== */
+
+.countdown-section{
+    padding:100px 20px;
+    text-align:center;
+}
+
+.countdown-box{
+    display:flex;
+    justify-content:center;
+    flex-wrap:wrap;
+    gap:25px;
+    margin:40px 0;
+}
+
+.time{
+    width:140px;
+    height:140px;
+    border:2px solid gold;
+    border-radius:20px;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    background:rgba(255,215,0,0.08);
+}
+
+.time span{
+    font-size:3rem;
+    color:gold;
+    font-weight:bold;
+}
+
+.time small{
+    color:#fff;
+    margin-top:10px;
+}
+
+.quote{
+    font-style:italic;
+    color:#ccc;
+}
+
+/* ==========================
+   TIMELINE
+========================== */
+
+.timeline-section{
+    padding:100px 20px;
+}
+
+.timeline{
+    max-width:900px;
+    margin:auto;
+}
+
+.timeline-item{
+    border-left:3px solid gold;
+    margin-bottom:35px;
+    padding:15px 30px;
+    position:relative;
+}
+
+.timeline-item::before{
+    content:"";
+    position:absolute;
+    left:-11px;
+    top:18px;
+    width:18px;
+    height:18px;
+    border-radius:50%;
+    background:gold;
+}
+
+.timeline-item h3{
+    color:#ff5555;
+    margin-bottom:10px;
+}
+
+/* ==========================
+   GALLERY
+========================== */
+
+.gallery-section{
+    padding:100px 20px;
+}
+
+.gallery{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:20px;
+    max-width:1300px;
+    margin:auto;
+}
+
+.gallery img{
+    width:100%;
+    height:300px;
+    object-fit:cover;
+    border-radius:20px;
+    border:2px solid gold;
+    transition:0.4s;
+}
+
+.gallery img:hover{
+    transform:scale(1.05);
+    box-shadow:0 0 25px gold;
+}
+
+/* ==========================
+   LETTER SECTION
+========================== */
+
+.letter-section{
+    padding:100px 20px;
+    text-align:center;
+}
+
+.letter{
+    display:none;
+    max-width:900px;
+    margin:40px auto;
+    background:rgba(255,255,255,0.06);
+    border:1px solid gold;
+    border-radius:20px;
+    padding:40px;
+    text-align:left;
+}
+
+.letter p{
+    margin-bottom:18px;
+}
+
+.signature{
+    color:gold;
+    font-weight:bold;
+}
+
+/* ==========================
+   GIFT SECTION
+========================== */
+
+.gift-section{
+    text-align:center;
+    padding:100px 20px;
+}
+
+.gift-box{
+    font-size:6rem;
+    cursor:pointer;
+    transition:0.4s;
+}
+
+.gift-box:hover{
+    transform:scale(1.15);
+}
+
+.gift-message{
+    display:none;
+    max-width:700px;
+    margin:30px auto;
+    background:rgba(255,255,255,0.05);
+    border:1px solid gold;
+    padding:30px;
+    border-radius:20px;
+}
+
+/* ==========================
+   FINAL SECTION
+========================== */
+
+.final-section{
+    padding:120px 20px;
+    text-align:center;
+}
+
+.final-message{
+    max-width:900px;
+    margin:auto;
+}
+
+.final-message p{
+    margin-bottom:25px;
+    font-size:1.2rem;
+}
+
+.final-message h3{
+    font-size:3rem;
+    color:#ff3d3d;
+    margin-top:40px;
+    text-shadow:0 0 20px red;
+}
+
+/* ==========================
+   FOOTER
+========================== */
+
+footer{
+    padding:40px;
+    text-align:center;
+    border-top:1px solid rgba(255,215,0,0.2);
+}
+
+footer p{
+    margin:10px 0;
+}
+
+/* ==========================
+   FLOATING BALLOONS
+========================== */
+
+.balloons{
+    position:fixed;
+    width:100%;
+    height:100%;
+    pointer-events:none;
+    z-index:-1;
+}
+
+.balloons span{
+    position:absolute;
+    bottom:-150px;
+    width:60px;
+    height:80px;
+    border-radius:50%;
+    animation:float 18s linear infinite;
+}
+
+.balloons span:nth-child(1){
+    left:5%;
+    background:#ff3b3b;
+}
+
+.balloons span:nth-child(2){
+    left:20%;
+    background:gold;
+    animation-duration:15s;
+}
+
+.balloons span:nth-child(3){
+    left:40%;
+    background:#ff6b6b;
+    animation-duration:20s;
+}
+
+.balloons span:nth-child(4){
+    left:60%;
+    background:gold;
+    animation-duration:17s;
+}
+
+.balloons span:nth-child(5){
+    left:80%;
+    background:#ff3b3b;
+    animation-duration:22s;
+}
+
+.balloons span:nth-child(6){
+    left:92%;
+    background:#ff7b7b;
+    animation-duration:19s;
+}
+
+@keyframes float{
+    from{
+        transform:translateY(0);
+    }
+    to{
+        transform:translateY(-130vh);
+    }
+}
+
+/* ==========================
+   GOLD GLOW
+========================== */
+
+.hero h1,
+.time span,
+h2{
+    text-shadow:0 0 12px rgba(255,215,0,0.7);
+}
+
+/* ==========================
+   SECTION SPACING
+========================== */
+
+section{
+    position:relative;
+    z-index:1;
+}
+
+/* ==========================
+   MOBILE RESPONSIVE
+========================== */
+
+@media(max-width:768px){
+
+    .hero h1{
+        font-size:2.6rem;
+    }
+
+    .hero h2{
+        font-size:1.8rem;
+    }
+
+    .hero-text{
+        font-size:1rem;
+    }
+
+    h2{
+        font-size:2rem;
+    }
+
+    .time{
+        width:110px;
+        height:110px;
+    }
+
+    .time span{
+        font-size:2rem;
+    }
+
+    .gallery img{
+        height:220px;
+    }
+
+    .final-message h3{
+        font-size:2rem;
+    }
+
+}
